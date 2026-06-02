@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея фотографий Utopia Show">
+    <meta name="author" content="Архипова Алёна">
+    <title>Fan-Utopia | Галерея</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТА -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">
+                <i class="fas fa-images"></i>
+                Галерея Utopia Show
+            </h1>
+            
+            <!-- Навигация -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href= "gallery.html" class="nav-link">Галерея</a></li>
+                </li>
+                    </li>
+                    <li><a href="facts_by_Topa.html" class="nav-link">Факты</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Панель статистики -->
+            <div class="controls-panel">
+                <div class="stats">
+                    <span class="stat-item">
+                        <i class="fas fa-image"></i>
+                        <span id="image-counter">Изображений: <span class="counter-value">6</span></span>
+                    </span>
+                    <span class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <span id="total-likes">Всего лайков: <span class="counter-value">0</span></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <div class="container">
+            <!-- Фильтры -->
+            <div class="filters">
+                <h3>Фильтры:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="team">Топа и команда</button>
+                    <button class="filter-btn" data-filter="events">Мероприятия</button>
+                    <button class="filter-btn" data-filter="solo">Сольные фото</button>
+                    <button class="filter-btn" data-filter="Marina">Топа и Марина</button>
+                    <button class="filter-btn" data-filter="Lyoha">Топа и Лёха</button>
+                    <button class="filter-btn" data-filter="celebrity">Топа и известные личности</button>
+
+                    <!--- Сделать поисковик фоток по их хэштегам, со счетчиком таковых -->
+
+                </div>
+            </div>
+            
+            <!-- Галерея -->
+
+            <!--- Поправить все те фотки, которые не вмещаются в карточку -->
+
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Карточка 1 -->
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/счастливи на фоне города.png" alt="Utopia Show" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа на фоне города</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2023 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                        </div>
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="gallery-item" data-category="team">
+                    <img src="images/топа и команда.png" alt="Utopia Show с командой" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2024 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#команда</span>
+                        </div>
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/comic con astana 2023 топа.jpg" alt="Utopia Show на мероприятии" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Comic Con Astana 2023</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2023 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#comic_con</span>
+                        </div>
+                        <button class="like-btn" data-id="3">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/топа и лошадка.png" alt="Utopia Show в кепке" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа на лошадке</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2022 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                            <span class="tag">#игого</span>
+                        </div>
+                        <button class="like-btn" data-id="4">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 5 -->
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/топа со скейтом.png" alt="Utopia Show со скейтом" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа со скейтом</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2020 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                            <span class="tag">#скейт</span>
+                        </div>
+                        <button class="like-btn" data-id="5">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 6 -->
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/в поисках контента.png" alt="Utopia Show с камерой" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">В поисках контента</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2021 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                            <span class="tag">#съемка</span>
+                        </div>
+                        <button class="like-btn" data-id="6">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 7 
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/красавчик топа в свитере.jpg" alt="Топа в свитере" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа в свитере</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2020 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                            <span class="tag">#нг</span>
+                        </div>
+                        <button class="like-btn" data-id="7">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 8 
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/крутой топа с винтовкой.jpg" alt="Топа с винтовкой" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Молодой топа с винтовкой</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> ~ 2015 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                        </div>
+                        <button class="like-btn" data-id="8">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 9 
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/подмигивает.jpg" alt="Топа подмигивает в камеру" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа подмигивает</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2020 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                        </div>
+                        <button class="like-btn" data-id="9">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 10
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/топа на белом фоне.png" alt="Топа на белом фоне" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа на белом фоне</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2025 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                        </div>
+                        <button class="like-btn" data-id="10">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 11
+                <div class="gallery-item" data-category="solo">
+                    <img src="images/топа на лодке.jpg" alt="Топа на лодке" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа на лодке</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2020 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#сольное</span>
+                        </div>
+                        <button class="like-btn" data-id="11">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 12 
+                <div class="gallery-item" data-category="celebrity">
+                    <img src="images/топа и макс +100500.png" alt="Топа и Макс +100500" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Топа и Макс +100500</h3>
+                        <p class="gallery-date"><i class="far fa-calendar"></i> ~ 2023 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#другие крутые ребята</span>
+                        </div>
+                        <button class="like-btn" data-id="12">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 13
+                <div class="gallery-item" data-category="Marina">
+                    <img src="images/топа с маришкой 1.jpg" alt="Топа с Мариной" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 2023 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#Марина</span>
+                        </div>
+                        <button class="like-btn" data-id="13">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 14 
+                <div class="gallery-item" data-category="Lyoha">
+                    <img src="images/топа с лешей.jpg" alt="Топа с Лёхой" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <p class="gallery-date"><i class="far fa-calendar"></i> ~ 2015 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>
+                            <span class="tag">#Лёха</span>
+                        </div>
+                        <button class="like-btn" data-id="14">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 15 
+                <div class="gallery-item" data-category="team">
+                    <img src="images/топа и команда 2.png" alt="Топа и команда" class="gallery-img" loading="lazy">
+                    <div class="gallery-content">
+                        <p class="gallery-date"><i class="far fa-calendar"></i> 20 г.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">#Топа</span>                                            
+                            <span class="tag">#команда</span>
+                        </div>
+                        <button class="like-btn" data-id="14">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Кнопка "Вернуться наверх" -->
+            <div class="back-to-top">
+                <a href="#" class="top-btn"><i class="fas fa-arrow-up"></i> Вернуться наверх</a>
+            </div>
+        </div>
+    </main> 
+    
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Архипова Алёна, студентка 1 курса, группа 1ИП-1-25</p>
+            <p>Все права защищены</p>
+            <div class="footer-links">
+                <a href="contacts.html">Связаться с автором</a>
+                <a href="index.html">На главную</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+    <script src="script.js"></script>
+</body>
+</html>

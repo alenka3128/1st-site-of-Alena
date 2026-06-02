@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты автора фан-сайта Utopia Show">
+    <meta name="author" content="Архипова Алёна">
+    <title>Fan-Utopia | Контакты</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТА -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">
+                <i class="fas fa-address-book"></i>
+                Контакты автора
+            </h1>
+            
+            <!-- Навигация -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+                    <li><a href="facts_by_Topa.html" class="nav-link">Факты</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <div class="container">
+            <!-- Информация об авторе -->
+            <section class="content-section">
+                <h2><i class="fas fa-user-circle"></i> Информация об авторе</h2>
+                
+                <div class="contacts-grid">
+                    <!-- Карточка 1: Имя -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="contact-title">Автор</h3>
+                        <p>Архипова Алёна Михайловна</p>
+                        <p class="contact-subtitle">Студентка 1 курса, группа 1ИП-1-25</p>
+                    </div>
+                    
+                    <!-- Карточка 2: Почта -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email</h3>
+                        <a href="mailto:alesha.create.31@gmail.com" class="contact-link">alesha.create.31@gmail.com</a>
+                    </div>
+                    
+                    <!-- Карточка 3: Telegram -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3 class="contact-title">Telegram-канал</h3>
+                        <a href="https://t.me/PhysicsEngineeringAndAsro" class="contact-link" target="_blank">@PhysicsEngineeringAndAsro</a>
+                        <p class="contact-details">Самый честный отзыв: "САМЫЙ ЛУЧШИЙ ТГК В МИРЕ"</p>
+                        <p class="contact-details">*Скорее всего, в скором времени будет не активен </p>
+                    </div>
+                    
+                    <!-- Карточка 4: Донат -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="contact-title">Поддержать автора</h3>
+                        <p class="contact-details">2200 7010 2102 6429 (Т-Банк)</p>
+                        <p class="contact-details">Автору на шоколодку 🥺</p>
+                    </div>
+                </div>
+                
+                <div class="section-top">
+                    <a href="#" class="section-top-link"><i class="fas fa-arrow-up"></i> Наверх</a>
+                </div>
+            </section>
+            
+            <!-- Форма обратной связи -->
+            <div class="form-container">
+                <h2 class="form-title">Написать автору</h2>
+                <form>
+    <div class="form-row">
+      <div class="form-col">
+        <label class="form-label" for="name">Введите ваше имя</label>
+        <input type="text" id="name" class="form-input" placeholder="Ваше имя" required>
+        <span class="form-error">Введите имя</span>
+      </div>
+      <div class="form-col">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="example@mail.com" required>
+        <span class="form-error">Введите корректный email</span>
+      </div>
+    </div>
+
+    <label class="form-label" for="subject">Тема</label>
+    <select id="subject" class="form-select" required>
+      <option value="theme">Выберите тему</option>
+      <option value="criticism">Критика</option>
+      <option value="suggestion">Предложение</option>
+      <option value="other">Другое</option>
+    </select>
+
+    <label class="form-label" for="message">Сообщение</label>
+    <textarea id="message" class="form-textarea" placeholder="Ведите ваше сообщение..." required></textarea>
+    <span class="form-error">Поле не может быть пустым</span>
+
+<!-- 
+
+    <div class="custom-checkbox-group">
+      <input type="checkbox" id="agree" class="custom-checkbox" required>
+      <label for="agree" class="checkbox-label">Я даю согласие на обработку персональных данных </label>     Починить галочку и сделать ее рабочей -->
+      <button type="submit" class="submit-btn">Отправить</button>
+            
+            <!-- Кнопка "Вернуться наверх" -->
+            <div class="back-to-top">
+                <a href="#" class="top-btn"><i class="fas fa-arrow-up"></i> Вернуться наверх</a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Архипова Алёна, студентка 1 курса, группа 1ИП-1-25</p>
+            <p>Все права защищены</p>
+            <div class="footer-links">
+                <a href="index.html">На главную</a>
+                <a href="gallery.html">Галерея</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+    <script src="script.js"></script>
+</body>
+</html>
